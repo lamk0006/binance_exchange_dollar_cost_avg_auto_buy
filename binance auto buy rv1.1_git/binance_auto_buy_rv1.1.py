@@ -85,7 +85,7 @@ class main:
         schedule.every().day.at("06:00").do(self.run)
         while True:
             schedule.run_pending()
-            time.sleep(60) #interval of 60s   
+            time.sleep(1)   
         
 if __name__ == "__main__":
     new_main = main()
